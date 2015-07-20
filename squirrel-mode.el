@@ -50,7 +50,7 @@
 
 (defun squirrel-electric-brace (arg)
   (interactive "P")
-  (insert-char last-command-char 1)
+  (insert-char last-command-event 1)
   (squirrel-indent-line)
   (if (looking-back "^\\s *")
       (forward-char)
